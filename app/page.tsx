@@ -1,5 +1,5 @@
 'use client'
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import Navbar from "./components/Navbar";
 import MainSection from "./components/MainSection";
 import RightDesc from "./components/RightDesc";
