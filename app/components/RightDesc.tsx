@@ -30,7 +30,7 @@ const RightDesc: React.FC = () => {
       </div>
 
       <h1 className="text-4xl mb-4  text-gray-900 dark:text-white">
-        I'M <span className="text-[#0033ff] dark:text-[#69dbfb] font-bold">OM KUMAR</span>
+        I&apos;M <span className="text-[#0033ff] dark:text-[#69dbfb] font-bold">OM KUMAR</span>
       </h1>
       <h1 className="text-4xl mb-4 text-wrap min-h-[100px] sm:min-h-[auto]  text-gray-900 dark:text-white">
         I DO <span id="title" ref={typedElement}></span>
