@@ -1,101 +1,69 @@
+'use client'
+
 import Image from "next/image";
+import Navbar from "./components/Navbar";
+import MainSection from "./components/MainSection";
+import RightDesc from "./components/RightDesc";
+import AboutMe from "./components/AboutMe";
+import Skills from "./components/Skills";
+import Border from "./components/Border";
+import Projects from "./components/Projects";
+import { useState } from "react";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+  return (
+    <>
+      <Navbar />
+      <div id="home" className="container bg-white dark:bg-black w-[90vw] lg:w-[90vw] lg:relative mx-auto flex flex-col-reverse lg:flex-row justify-center xl:gap-36 items-center my-20 mb-10">
+        <RightDesc />
+        <MainSection />
+      </div>
+      <Border id="about" title="About Me" classname=""/>
+      <AboutMe />
+      <Border id="skills" title="My Skills" classname=""/>
+      <h1 className="container text-3xl w-[90vw] mx-auto text-center m-5 ">Web Development skills</h1>
+      <div className="container skillSection flex flex-row justify-center items-center flex-wrap gap-x-20 p-10 pt-0 lg:w-[80vw] mx-auto">
+        <Skills name="HTML" img="/img/html.jpg" />
+        <Skills name="CSS" img="/img/css.jpg" />
+        <Skills name="JavaScript" img="/img/javascript.jpg" />
+        <Skills name="PHP" img="/img/php.jpg" />
+        <Skills name="ReactJs" img="/img/reactjs.jpg" />
+        <Skills name="NodeJS" img="/img/node.jpg" />
+        <Skills name="Express.js" img="/img/express.jpg" />
+        <Skills name="Next.js" img="/img/next.jpg" />
+        <Skills name="SQL" img="/img/sql.jpg" />
+        <Skills name="MongoDB" img="/img/mongo.jpg" />
+
+
+      </div>
+      <h1 className="container text-3xl w-[90vw] mx-auto text-center m-5 ">Programming skills</h1>
+      <div className="container skillSection flex flex-row flex-wrap justify-center items-center gap-x-20 p-10 pt-0 lg:w-[80vw] mx-auto mb-10">
+        <Skills name="C" img="/img/c.jpg" />
+        <Skills name="C++" img="/img/cpp.jpg" />
+        <Skills name="Java" img="/img/java.jpg" />
+        <Skills name="Python" img="/img/python.jpg" />
+      </div>
+      <Border id="projects" title="my Projects" classname=""/>
+      <div className="container w-[90vw] mx-auto flex flex-row justify-center items-center gap-20 flex-wrap ">
+      <Projects title="Foot Fusion" img="" desc="An full stack ecommerce website that features footwear. Build using HTML, CSS ,JavaScript, PHP, SQL. " link="https://github.com/omkumar17/SDP_Project" videolink="" videoStatus="disable"/>
+      <Projects title="Password Manager" img="" desc="A reactJS project that uses express.js and MongoBD to store password. Performs all CRUD operations" link="https://github.com/omkumar17/passMan_mongo" videolink="https://www.linkedin.com/posts/om-kumar17_mern-reactjs-tailwindcss-activity-7235672042820296704-7d6H?utm_source=share&utm_medium=member_desktop" videoStatus="enable"/>
+      <Projects title="Weather - by Om" img="" desc="A simple HTML, CSS and JavaScript project that uses API integration to fetch weather from OpenWeather." link="https://github.com/omkumar17/weather-by-om" videolink="https://www.linkedin.com/posts/om-kumar17_weatherforecast-openweathermap-webdevelopment-activity-7219611095869575169-51yL?utm_source=share&utm_medium=member_desktop" videoStatus="enable"/>
+      <Projects title="Task Manager" img="" desc="A reactJS project that manager the task . Uses all CRUD operations and basic task manager features." link="https://github.com/omkumar17/task_manager" videolink="https://www.linkedin.com/posts/om-kumar17_reactjs-tailwindcss-javascript-activity-7229877105314938881-vpxl?utm_source=share&utm_medium=member_desktop" videoStatus="enable"/>
+      <Projects title="Digital Signature" img="" desc="A JavaScript project that allows user to download their digital signature in any color." link="https://github.com/omkumar17/digital-signature" videolink="https://www.linkedin.com/posts/om-kumar17_learninpublic-javascript-html-activity-7222846896577404928-9xPG?utm_source=share&utm_medium=member_desktop" videoStatus="enable"/>
+      <Projects title="Digital Menu" img="" desc="A PHP project that uses SQL database to store order placed . User can make order digitally in resturants" link="https://github.com/omkumar17/digital_menu" videolink="" videoStatus="disable"/>
+      <Projects title="Console ecomm" img="" desc="A simple java based console program that allows user and admin to order and manage products respectively." link="https://github.com/omkumar17/console-ecomm" videolink="" videoStatus="disable"/>
+      
+      </div>
+      <Border id="contacts" title="Contact Me" classname=""/>
+      <Contact/>
+      
+      <Footer/>
+      
+    </>
   );
 }

@@ -4,20 +4,28 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  body {
+    background-color: #000000;
+    color: #ffffff;
   }
 }
 
-body {
+.dark {
+  --background: #000000;
+  --foreground: #ffffff;
+}
+
+
+body,html {
+  overflow-x:hidden;
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  width:100%;
 }
 
 @layer utilities {
