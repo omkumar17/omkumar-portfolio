@@ -1,6 +1,5 @@
 'use client'
 
-import Image from "next/image";
 import Navbar from "./components/Navbar";
 import MainSection from "./components/MainSection";
 import RightDesc from "./components/RightDesc";
@@ -8,7 +7,6 @@ import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
 import Border from "./components/Border";
 import Projects from "./components/Projects";
-import { useState } from "react";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 

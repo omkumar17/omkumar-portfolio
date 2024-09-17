@@ -37,7 +37,7 @@ const RightDesc: React.FC = () => {
       </h1>
 
       <h3 className="text-lg mb-4  text-gray-900 dark:bg-black dark:text-white dark:bg-opacity-40 md:dark:bg-black dark:border-gray-700">
-        I’m a passionate software developer with a solid foundation in web and backend development. I excel in problem-solving and teamwork, always eager to learn and innovate.
+        I&apos;m a passionate software developer with a solid foundation in web and backend development. I excel in problem-solving and teamwork, always eager to learn and innovate.
       </h3>
 
       <div className="flex space-x-4 mt-4">
