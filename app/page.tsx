@@ -1,5 +1,5 @@
 'use client'
-import { SpeedInsights } from "@vercel/speed-insights/next"
+
 import Navbar from "./components/Navbar";
 import MainSection from "./components/MainSection";
 import RightDesc from "./components/RightDesc";
@@ -9,6 +9,7 @@ import Border from "./components/Border";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Head from 'next/head';
 
 
 export default function Home() {
@@ -16,6 +17,13 @@ export default function Home() {
 
   return (
     <>
+     <Head>
+        <link rel="icon" href="/favicon.ico" className="dark:invert" type="image/ico" />
+        <meta name="keywords" content="om kumar, portfolio, om kumar portfolio, about om kumar "  />
+        <meta name="author" content="Om Kumar" />
+        <link rel="canonical" href="https://omkumar-portfolio.vercel.app" />
+        <title>Your Site Title</title>
+      </Head>
       <Navbar />
       <div id="home" className="container bg-white dark:bg-black w-[90vw] lg:w-[90vw] lg:relative mx-auto flex flex-col-reverse lg:flex-row justify-center xl:gap-36 items-center my-20 mb-10">
         <RightDesc />

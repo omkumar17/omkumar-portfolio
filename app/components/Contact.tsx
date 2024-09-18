@@ -37,7 +37,7 @@ const Contact: React.FC = () => {
                             height={20}
                             className="invert dark:invert-0"
                         />
-                        <span className="flex-1 ml-3 whitespace-nowrap ">Tweeter (X)  <span className='opacity-50 float-right'> om_kumar17</span></span>
+                        <span className="flex-1 ml-3 whitespace-nowrap ">Twitter (X)  <span className='opacity-50 float-right'> om_kumar17</span></span>
                     </a>
                 </li>
                 <li>
@@ -70,7 +70,7 @@ const Contact: React.FC = () => {
                 </li>
                 <li>
                     <a
-                        href="https://wa.me/9693808798" target="_blank"
+                        href="https://wa.me/+919693808798" target="_blank"
                         className="flex items-center p-3 text-base font-bold border-2 border-black text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                     >
                         <Image

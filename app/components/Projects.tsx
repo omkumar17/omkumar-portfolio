@@ -14,9 +14,7 @@ const Projects: React.FC<ProjectsProps> = (props) => {
     return (<>
 
         <div id="projects" className="max-w-sm md:max-w-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="">
-                <div className="rounded-t-lg w-full  max-h-[250px]"  >{props.img}</div>
-            </a>
+            
             <div className="p-5">
                 <a href="">
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{props.title}</h5>

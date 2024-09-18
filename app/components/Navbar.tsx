@@ -60,8 +60,8 @@ const Navbar = () => {
     return (
         <nav className="bg-white bg-opacity-80 dark:bg-gray-900 dark:bg-opacity-80 fixed w-full z-20 top-0 start-0 border-b-4 dark:border-b border-gray-200 dark:border-gray-600">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 py-2">
-                <a href="/img/signaturelogo.png" className="flex items-center  h-[45px]">
-                    <img src="/img/signaturelogo.png" className="invert dark:invert-0 h-full" alt="om Logo" />
+                <a href="#home" className="flex items-center  h-[45px]">
+                    <Image src="/img/signaturelogo.png" className="invert dark:invert-0 h-full" alt="om Logo" width={60} height={60}/>
                     <span className="self-center text-2xl font-semibold whitespace-nowrap text-black dark:text-white">Om Kumar</span>
                 </a>
                 
