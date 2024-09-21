@@ -21,7 +21,7 @@ const AboutMe = () => {
                 </div>
                 <div className="details lg:w-[50%] h-[100%] relative">
                     <div id="fullWidthTabContent" className="">
-                        <div className=" p-4 bg-white rounded-lg md:p-8 dark:bg-black" id="stats" role="tabpanel" aria-labelledby="stats-tab">
+                        <div className=" p-4  rounded-lg md:p-8 " id="stats" role="tabpanel" aria-labelledby="stats-tab">
                             <Border title="Education" id="education" classname="lg:hidden"/>
                             <h1 className='text-5xl text-center opacity-50  lg:absolute lg:top-[40%] xl:left-[32%] hidden lg:flex lg:left-[27%] lg:-rotate-90 lg:opacity-40 my-10 '>Education</h1>
                             <dl className="container grid max-w-screen-xl font-bold grid-cols-1 gap-10 p-4 mx-auto text-gray-900 sm:grid-cols-2 xl:grid-cols-2 dark:text-white sm:p-8">

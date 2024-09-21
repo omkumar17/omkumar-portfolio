@@ -10,22 +10,31 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Head from 'next/head';
+import { useEffect ,useState} from "react";
+import Loading from "./loading";
 
 
 export default function Home() {
+
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+      setIsLoading(false); 
+  }, []);
   
 
   return (
     <>
      <Head>
-        <link rel="icon" href="/favicon.ico" className="dark:invert" type="image/ico" />
-        <meta name="keywords" content="om kumar, portfolio, om kumar portfolio, about om kumar "  />
+        <link rel="icon" href="/favicon.ico" className="invert dark:invert" type="image/ico" />
+        <meta name="keywords" content="om kumar , portfolio , om kumar portfolio , about om kumar "  />
         <meta name="author" content="Om Kumar" />
         <link rel="canonical" href="https://omkumar-portfolio.vercel.app" />
         <title>Your Site Title</title>
       </Head>
+      {isLoading?<Loading/>:
+      <>
       <Navbar />
-      <div id="home" className="container bg-white dark:bg-black w-[90vw] lg:w-[90vw] lg:relative mx-auto flex flex-col-reverse lg:flex-row justify-center xl:gap-36 items-center my-20 mb-10">
+      <div id="home" className="container  w-[90vw] lg:w-[90vw] lg:relative mx-auto flex flex-col-reverse lg:flex-row justify-center xl:gap-36 items-center my-20 mb-10">
         <RightDesc />
         <MainSection />
       </div>
@@ -38,6 +47,7 @@ export default function Home() {
         <Skills name="CSS" img="/img/css.jpg" />
         <Skills name="JavaScript" img="/img/javascript.jpg" />
         <Skills name="PHP" img="/img/php.jpg" />
+        <Skills name="TailwindCss" img="/img/tailwind.jpg" />
         <Skills name="ReactJs" img="/img/reactjs.jpg" />
         <Skills name="NodeJS" img="/img/node.jpg" />
         <Skills name="Express.js" img="/img/express.jpg" />
@@ -54,7 +64,7 @@ export default function Home() {
         <Skills name="Java" img="/img/java.jpg" />
         <Skills name="Python" img="/img/python.jpg" />
       </div>
-      <Border id="projects" title="my Projects" classname=""/>
+      <Border id="projects" title="My Projects" classname=""/>
       <div className="container w-[90vw] mx-auto flex flex-row justify-center items-center gap-20 flex-wrap ">
       <Projects title="Foot Fusion" img="" desc="An full stack ecommerce website that features footwear. Build using HTML, CSS ,JavaScript, PHP, SQL. " link="https://github.com/omkumar17/SDP_Project" videolink="" videoStatus="disable"/>
       <Projects title="Password Manager" img="" desc="A reactJS project that uses express.js and MongoBD to store password. Performs all CRUD operations" link="https://github.com/omkumar17/passMan_mongo" videolink="https://www.linkedin.com/posts/om-kumar17_mern-reactjs-tailwindcss-activity-7235672042820296704-7d6H?utm_source=share&utm_medium=member_desktop" videoStatus="enable"/>
@@ -69,7 +79,8 @@ export default function Home() {
       <Contact/>
       
       <Footer/>
-      
+      </>
+    }
     </>
   );
 }

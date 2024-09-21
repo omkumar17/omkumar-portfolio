@@ -58,7 +58,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="bg-white bg-opacity-80 dark:bg-gray-900 dark:bg-opacity-80 fixed w-full z-20 top-0 start-0 border-b-4 dark:border-b border-gray-200 dark:border-gray-600">
+        <nav className="bg-white bg-opacity-90 dark:bg-gray-900 dark:bg-opacity-90 fixed w-full z-20 top-0 start-0 border-b-4 dark:border-b border-gray-200 dark:border-gray-600">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 py-2">
                 <a href="#home" className="flex items-center  h-[45px]">
                     <Image src="/img/signaturelogo.png" className="invert dark:invert-0 h-full" alt="om Logo" width={60} height={60}/>
@@ -68,7 +68,7 @@ const Navbar = () => {
                 <div className="flex justify-center items-center gap-0 md:gap-6  md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                 <button
                     onClick={toggleDarkMode}
-                    className=" bg-gray-800 text-white dark:bg-gray-200 border-2 dark:border-white border-black dark:text-black rounded-3xl"
+                    className="  text-white  border-2 dark:border-white border-black dark:text-black rounded-3xl"
                 >
                     {isDarkMode ? <Image className="rounded-3xl" src="/img/darkmode.jpg" alt="" width={30} height={30}/>: <Image className="rounded-3xl invert" src="/img/lightmode.jpg" alt="" width={30} height={30}/>}
                 </button>
@@ -85,7 +85,7 @@ const Navbar = () => {
                     id="navbar-sticky"
                 >
                     <ul
-                        className={`flex flex-col font-bold p-4 md:p-0 mt-4  border border-gray-600 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-900 dark:bg-opacity-70 bg-opacity-70 md:dark:bg-gray-900 dark:border-gray-700`}
+                        className={`flex flex-col font-bold p-4 md:p-0 mt-4  border border-gray-600 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  dark:bg-opacity-70 bg-opacity-70  dark:border-gray-700`}
                     >
                         <li>
                             <a

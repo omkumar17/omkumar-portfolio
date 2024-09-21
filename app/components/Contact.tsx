@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Contact: React.FC = () => {
     return (
-        <div className="container p-5 mx-auto max-w-sm border-2 border-black bg-white   rounded-lg shadow  dark:bg-gray-800 dark:border-gray-700">
+        <div className="container p-5 mx-auto max-w-sm border-2 border-black  rounded-lg shadow  dark:border-gray-700">
             <h5 className="mb-3 text-base font-semibold text-gray-900 md:text-xl dark:text-white">
                 Contact me on
             </h5>

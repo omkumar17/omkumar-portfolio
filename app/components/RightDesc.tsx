@@ -23,7 +23,7 @@ const RightDesc: React.FC = () => {
 
   return (
 
-    <div className="lg:w-[60%] bg-white text-gray-900 dark:bg-black dark:text-white">
+    <div className="lg:w-[60%]  text-gray-900  dark:text-white">
       <div className="bg-[#296cfe] text-white text-sm font-semibold py-1 px-2 rounded relative inline-block mb-4">
         <span>Hello</span>
         <div className="absolute bottom-[-10px] left-1 w-0 h-0 border-t-0 border-l-[10px] border-b-[10px] border-l-[#3374ff] border-transparent"></div>
@@ -36,7 +36,7 @@ const RightDesc: React.FC = () => {
         I DO <span id="title" ref={typedElement}></span>
       </h1>
 
-      <h3 className="text-lg mb-4  text-gray-900 dark:bg-black dark:text-white dark:bg-opacity-40 md:dark:bg-black dark:border-gray-700">
+      <h3 className="text-lg mb-4  text-gray-900   dark:text-white dark:bg-opacity-40  dark:border-gray-700">
         I&apos;m a passionate software developer with a solid foundation in web and backend development. I excel in problem-solving and teamwork, always eager to learn and innovate.
       </h3>
 

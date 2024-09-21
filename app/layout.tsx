@@ -36,7 +36,7 @@ export const metadata: Metadata = {
         alt: "Om Kumar Portfolio Image",
       },
     ],
-    siteName: "Om Kumar's Portfolio",
+    siteName: "Om Kumar Portfolio",
   },
 
   // Twitter metadata
