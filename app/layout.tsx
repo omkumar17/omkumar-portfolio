@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     url: "https://omkumar-portfolio.vercel.app",
     images: [
       {
-        url: "https://omkumar-portfolio.vercel.app/favicon.ico",
+        url: "https://omkumar-portfolio.vercel.app/img/signaturelogo.jpg",
         width: 1200,
         height: 630,
         alt: "Om Kumar Portfolio Image",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Portfolio - Om Kumar",
     description: "Portfolio website for showing Digital presence.",
-    images: ["https://omkumar-portfolio.vercel.app/favicon.ico"],
+    images: ["https://omkumar-portfolio.vercel.app/img/signaturelogo.jpg"],
   },
 };
 
