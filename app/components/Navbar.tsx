@@ -43,8 +43,8 @@ const Navbar = () => {
 
     const handleDownload = () => {
         const link = document.createElement('a');
-        link.href = '/pdf/resume-latest.pdf';
-        link.setAttribute('download', 'resume-omkumar.pdf');
+        link.href = '/pdf/OmKumar-Resume-col-latest.pdf';
+        link.setAttribute('download', 'OmKumar-Resume-col-latest.pdf');
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);

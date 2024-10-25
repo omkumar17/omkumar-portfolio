@@ -29,7 +29,7 @@ export default function Home() {
         <meta name="keywords" content="om kumar , portfolio , om kumar portfolio , about om kumar "  />
         <meta name="author" content="Om Kumar" />
         <link rel="canonical" href="https://omkumar-portfolio.vercel.app" />
-        <title>Your Site Title</title>
+        <title>PortFolio - Om Kumar</title>
       </Head>
       {isLoading?<Loading/>:
       <>
