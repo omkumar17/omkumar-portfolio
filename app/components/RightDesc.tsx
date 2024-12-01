@@ -44,7 +44,7 @@ const RightDesc: React.FC = () => {
         <a href="#projects" className="inline-block">
           <button className="h-10 w-28 border-2 border-white rounded-md text-white bg-[#00009e] font-semibold hover:text-[#c3c3ff]">Portfolio</button>
         </a>
-        <a href="/pdf/OmKumar-Resume-col-latest.pdf" target="_blank" className="inline-block">
+        <a href="/pdf/OmKumar-Resume.pdf" target="_blank" className="inline-block">
           <button className="h-10 w-28 border-2 border-white rounded-md text-white bg-[#00009e] font-semibold hover:text-[#c3c3ff]">Resume</button>
         </a>
       </div>
