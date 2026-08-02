@@ -158,16 +158,37 @@ export default function Home() {
               <h2 className="text-2xl font-bold text-white">Other Mini Projects</h2>
 
               <p className="mt-4 max-w-4xl mx-auto text-gray-400 leading-7">
-                Alongside my major projects, I've built several mini applications to
+                Alongside my major projects, I&apos;ve built several mini applications to
                 strengthen my problem-solving and full-stack development skills. These
-                include a <span className="font-semibold dark:text-white text-black">Assignment Submission Platform</span>,
-                <span className="font-semibold dark:text-white text-black"> Medi Mind</span>,
-                <span className="font-semibold dark:text-white text-black"> Predictive Analysis Project</span>,
-                <span className="font-semibold dark:text-white text-black"> Web Chats</span>,
-                <span className="font-semibold dark:text-white text-black"> Bus Management</span>,
-                <span className="font-semibold dark:text-white text-black"> Personal Finanace Management</span>,
-                <span className="font-semibold dark:text-white text-black"> Cryptotracker</span>,
-                and various JavaScript, React, PHP, and Java applications covering API
+                include a{" "}
+                <span className="font-semibold dark:text-white text-black">
+                  Assignment Submission Platform
+                </span>
+                ,
+                <span className="font-semibold dark:text-white text-black">
+                  {" "}Medi Mind
+                </span>
+                ,
+                <span className="font-semibold dark:text-white text-black">
+                  {" "}Predictive Analysis Project
+                </span>
+                ,
+                <span className="font-semibold dark:text-white text-black">
+                  {" "}Web Chats
+                </span>
+                ,
+                <span className="font-semibold dark:text-white text-black">
+                  {" "}Bus Management
+                </span>
+                ,
+                <span className="font-semibold dark:text-white text-black">
+                  {" "}Personal Finance Management
+                </span>
+                ,
+                <span className="font-semibold dark:text-white text-black">
+                  {" "}Crypto Tracker
+                </span>
+                , and various JavaScript, React, PHP, and Java applications covering API
                 integration, CRUD operations, authentication, database management, and
                 responsive UI development. More projects, demos, and source code are
                 available on my GitHub and LinkedIn profiles.
