@@ -28,7 +28,7 @@ const AboutMe = () => {
                                 <div className="flex flex-col  justify-center">
                                     <a href="https://arkajainuniversity.ac.in/about/" target="_blank"><dt className="mb-2 text-xl font-extrabold text-[#4c84ff] ">Arka Jain University , JSR</dt></a>
                                     <dd className="text-gray-500 dark:text-gray-400">Masters in Computer Application (2024-2026)</dd>
-                                    {/* <dd className="text-gray-500 dark:text-gray-400"></dd> */}
+                                    <dd className="text-gray-500 dark:text-gray-400">Percentage:90.00%</dd>
                                 </div>
                                 <div className="flex flex-col  justify-center">
                                     <a href="https://sxca.edu.in/about-us/" target="_blank"><dt className="mb-2 text-xl font-extrabold text-[#4c84ff] ">St Xavier’s College , Ahmedabad</dt></a>

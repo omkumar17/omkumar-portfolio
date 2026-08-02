@@ -1,55 +1,87 @@
-import React from 'react'
-
+import React from "react";
 
 interface ProjectsProps {
     title: string;
     desc: string;
     img: string;
     link: string;
+    livelink: string;
     videolink: string;
-    videoStatus: string;
 }
 
 const Projects: React.FC<ProjectsProps> = (props) => {
-    return (<>
-
-        <div id="projects" className="max-w-sm md:max-w-xs border border-gray-200 rounded-lg shadow  dark:border-gray-700">
-            
+    return (
+        
+        <div
+            id="projects"
+            className="max-w-sm md:max-w-xs border border-gray-200 rounded-lg shadow dark:border-gray-700"
+        >
             <div className="p-5">
-                <a href="">
-                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{props.title}</h5>
-                </a>
-                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{props.desc}</p>
-                <div className="actions flex flex-row  justify-between items-center m-0 p-0">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    {props.title}
+                </h5>
+
+                <p className="mb-4 font-normal text-gray-700 dark:text-gray-400">
+                    {props.desc}
+                </p>
+
+                <div className="flex flex-wrap gap-2">
+                    {/* Live Demo */}
                     <a
-                        href={props.videoStatus !== 'disable' ? props.videolink : '#'}
-                        target='_blank'
+                        href={props.livelink || "#"}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         onClick={(e) => {
-                            if (props.videoStatus === 'disable') {
-                                e.preventDefault(); 
-                            }
+                            if (!props.livelink) e.preventDefault();
                         }}
-                        className={`${props.videoStatus === 'disable' ? 'cursor-not-allowed bg-black opacity-50' : ''} inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#00009e] rounded-lg border-2 border-white hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-[#00009e] dark:hover:bg-blue-700 dark:focus:ring-blue-800`}
-                        aria-disabled={props.videoStatus === 'disable'}
+                        className={`flex-1 inline-flex justify-center items-center px-3 py-2 text-sm font-medium text-white rounded-lg border-2 border-white transition ${!props.livelink
+                                ? "cursor-not-allowed bg-gray-600 opacity-50"
+                                : "bg-green-700 hover:bg-green-800"
+                            }`}
+                        aria-disabled={!props.livelink}
                     >
-                        Video Demo
-                        <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                        </svg>
+                        Live Demo
                     </a>
 
+                    {/* Video Demo */}
+                    <a
+                        href={props.videolink || "#"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => {
+                            if (!props.videolink) e.preventDefault();
+                        }}
+                        className={`flex-1 inline-flex justify-center items-center px-3 py-2 text-sm font-medium text-white rounded-lg border-2 border-white transition ${!props.videolink
+                                ? "cursor-not-allowed bg-gray-600 opacity-50"
+                                : "bg-blue-700 hover:bg-blue-800"
+                            }`}
+                        aria-disabled={!props.videolink}
+                    >
+                        Video Demo
+                    </a>
 
-                    <a href={props.link} target='_blank' className="inline-flex items-center px-3 py-2 text-sm font-medium text-center border-2 border-white text-white bg-[#00009e] rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-[#00009e] dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                        Github
-                        <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                        </svg>
+                    {/* GitHub */}
+                    <a
+                        href={props.link || "#"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => {
+                            if (!props.link) e.preventDefault();
+                        }}
+                        className={`flex-1 inline-flex justify-center items-center px-3 py-2 text-sm font-medium text-white rounded-lg border-2 border-white transition ${!props.link
+                                ? "cursor-not-allowed bg-gray-600 opacity-50"
+                                : "bg-black hover:bg-gray-900"
+                            }`}
+                        aria-disabled={!props.link}
+                    >
+                        GitHub
                     </a>
                 </div>
             </div>
+            
         </div>
-    </>
-    )
-}
+        
+    );
+};
 
-export default Projects
+export default Projects;
