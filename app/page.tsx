@@ -155,7 +155,7 @@ export default function Home() {
 
             />
             <div className="mt-12 text-center">
-              <h2 className="text-2xl font-bold text-white">Other Mini Projects</h2>
+              <h2 className="text-2xl font-bold dark:text-white text-black">Other Mini Projects</h2>
 
               <p className="mt-4 max-w-4xl mx-auto text-gray-400 leading-7">
                 Alongside my major projects, I&apos;ve built several mini applications to
